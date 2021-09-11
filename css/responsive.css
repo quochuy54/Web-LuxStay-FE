@@ -1,0 +1,326 @@
+/* Mobile and Table */
+@media (max-width: 1023px)
+{
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .header-separate::after{
+        display: none;
+    }
+    .header{
+        padding: 24px;
+    }
+
+    .modal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+        display: none;
+    }
+
+    .header-booking__search{
+        width: 225px;
+        padding: 8px 16px;
+    }
+
+    .header-booking__search-box{
+        margin: 0;
+    }
+
+    #header__menu-checkbox:checked ~.modal{
+        display: block; 
+    }
+
+    
+    .header__mobile-menu-icon{
+        font-size: 3rem;
+        margin-right: 10px;
+    }
+    
+    .header__menu-table-mobile-overlay{
+        background-color: rgba(0, 0, 0, 0.719);
+        width: 100%;
+        height: 100%;
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0.2;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    .header__menu-table-mobile{
+        position: absolute;
+        top:0;
+        height: 100%;
+        width: 45%;
+        background-color: var(--white-color);
+        padding: 28px;
+        animation: slider 0.3s ease;
+    }
+    
+    @keyframes slider {
+        from{
+            
+            left: -350px;
+        }
+        to{
+        
+            left: 0;
+        }
+    }
+
+    .header__menu-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: -8px 0;
+    }   
+
+    .header__menu-item{   
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .header__menu-logo{
+        width: 180px;
+    }
+
+
+
+    .header-menu-table-mobile__icon-exit{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 4rem;
+        margin: 24px 24px 0 0;
+        z-index: 12;
+    }
+
+    .header__menu-link{
+        font-size: 2rem;
+        display: block;
+        padding: 24px 0;
+    }
+
+    .is-become-host::before{
+        top: 18px;
+        left: 46px;
+    } 
+
+    .menu-setting{
+        width: 100%;
+        height: 50px;
+    }
+
+    .menu-setting::before{
+        right: 16px;
+    }
+
+    .setting-table{
+        width: 100%;
+        flex-direction: column;
+        top:72%;
+        right: 0;
+    }
+
+    .setting-table::before{
+        right: 16px;
+    }
+    
+    .language::after{
+        display: none;
+    }
+
+    .content-list__list{
+        overflow-x: auto;
+    }
+
+    .content-list__item.offer{
+        height: 112px;
+    }
+
+    .suggest__list{
+        overflow-x: auto;
+    }
+    
+    .content-list__item.dico-suggestion{
+        width: 100%;
+        height: 400px;
+    }
+
+    .content-palce__text.dico-suggestion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        top: 24px;
+    }
+
+    .dico-suggestion__more-infor{
+        width: 33%;
+    }
+
+    .content-list__item.content-guide{
+        width: 33.3333%;
+    }
+
+    .introduce__QRcode{
+        display: none;
+    }
+
+    .introduce__contact{
+        margin:  0 0 55px 0;
+    }
+
+    .footer-bottom{
+        margin-top: 0;
+    }
+}
+
+
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1023px)
+{
+
+}
+
+/* Mobile */
+@media(max-width: 739px)
+{
+    .header{
+        padding: 0;
+    }
+    
+    .header__menu-table-mobile{
+        width: 80%;
+    }
+
+    .header__menu-logo{
+        width: 140px;
+    }
+
+    .header-menu-table-mobile__icon-exit{
+        font-size: 3rem;
+    }
+
+    .header__menu-link{
+        padding: 12px 0;
+    }
+
+    .slider{
+        margin: 105px 16px 0 16px;
+    }
+
+    .content__header{
+        line-height: 1.1;
+        margin: 0;
+    }
+
+    .content__slogan{
+        line-height: 1.5;
+    }
+    
+    .content-list__btn{
+        display: none;
+    }
+
+    .content-section{
+        padding: 0 16px;    
+    }
+
+    .content-list__item {
+        width: 60%;
+        height: 280px;
+    }
+
+    .content-palce__text {
+        bottom: 18px;
+        left: 20px;
+    }
+    
+    .content__more{
+        position: relative;
+    }
+
+    .content-list__item.dico-suggestion{
+        height: 250px;
+    }
+
+    
+
+    .content-palce__text.dico-suggestion{
+        height: 90%;
+    }
+
+    .dico-suggestion__more-infor{
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    .suggest__header{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .suggest__des{
+        margin-top: 10px;
+    }
+
+    .content-list__list.offer{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-list__item.offer{
+        padding: 12px 0;
+        width: 100%;
+    }
+    
+    .content-list__item.content-guide{
+        width: 100%;
+        height: 0%;
+    }
+    
+
+    .introduce{
+        margin: 0 16px;
+    }
+
+    .intoduce__path{
+        width: 230px;
+    }
+
+    .introduce__slogan{
+        font-size: 2rem;
+    }
+
+    .introduce__des{
+        line-height: 1.6;
+       position: a;
+    }
+
+    .introduce__app-contact{
+        padding: 0;
+    }
+
+
+    .introduce__appstore,
+    .introduce__ggplay,
+    .introduce__huawei{
+        margin: 0 auto;
+    }
+
+    .footer-top,
+    .footer-bottom{
+        margin: 0 16px;
+    }
+}
